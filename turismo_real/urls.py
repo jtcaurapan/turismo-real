@@ -19,6 +19,8 @@ from apps.accounts.views import user_register
 from apps.accounts.views import user_login
 from apps.accounts.views import user_logout
 from apps.bookings.views import index
+from apps.apartments.views import register_apartment
+from apps.extra_services.views import register_extra_service
 
 
 urlpatterns = [
@@ -27,4 +29,6 @@ urlpatterns = [
     path('register/', user_register, name='register'),
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
+    path('apartment/register', register_apartment, name='register_apartment'),
+    path('extra_services/register', register_extra_service, name='register_extra_service')
 ]
