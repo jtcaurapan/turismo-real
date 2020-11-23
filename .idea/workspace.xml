@@ -20,15 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5aa829-b22d-4573-8887-7c7fed9b1dd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/apartments/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/extra_services/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/apartments/register_apartment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/extra_services/register_extra_service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bookings/book_apartment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/bookings/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/bookings/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/apartments/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/apartments/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/apartments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/apartments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bookings/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/bookings/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turismo_real/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/turismo_real/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/turismo_real/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/turismo_real/urls.py" afterDir="false" />
     </list>
@@ -57,7 +56,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../laragon/www/webfactura" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -124,10 +123,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604180667849">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605814087305">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604180667849" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605814087305" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -322,3 +322,26 @@ nav {
     background-color: #2bbbad !important;
 }
 
+#check-availability-spinner {
+    float: left;
+    margin-left: 1rem;
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.dt-search-input-materialize{
+    height: 25px !important;
+}
+
+.table-actions {
+
+}

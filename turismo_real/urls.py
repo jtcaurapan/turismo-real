@@ -19,8 +19,15 @@ from apps.accounts.views import user_register
 from apps.accounts.views import user_login
 from apps.accounts.views import user_logout
 from apps.bookings.views import index
+from apps.bookings.views import check_availability
 from apps.apartments.views import register_apartment
+from apps.apartments.views import edit_apartment
+from apps.apartments.views import apartment_list
+from apps.bookings.views import book_apartment
+from apps.bookings.views import booking_confirm
 from apps.extra_services.views import register_extra_service
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
@@ -30,5 +37,10 @@ urlpatterns = [
     path('login/', user_login, name='login'),
     path('logout/', user_logout, name='logout'),
     path('apartment/register', register_apartment, name='register_apartment'),
-    path('extra_services/register', register_extra_service, name='register_extra_service')
-]
+    path('extra_services/register', register_extra_service, name='register_extra_service'),
+    path('book/apartment/<int:apartment_id>/', book_apartment, name="book_apartment"),
+    path('booking/confirm/', booking_confirm, name="booking_confirm"),
+    path('apartment/edit/<int:apartment_id>/', edit_apartment, name="edit_apartment"),
+    path('apartment/list/', apartment_list, name="apartment_list"),
+    path('check-availability/', check_availability, name='check_availability'),
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

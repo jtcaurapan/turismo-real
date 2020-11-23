@@ -1,0 +1,39 @@
+{% extends 'skeletons/main.html' %}
+{% block body_content %}
+    <table id="apartments_table" class="display">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Tarifa</th>
+            <th>Capacidad</th>
+            <th>Dirección</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for apartment in apartments %}
+        <tr>
+            <td>{{ apartment.name }}</td>
+            <td>{{ apartment.description }}</td>
+            <td>{{ apartment.rate }}</td>
+            <td>{{ apartment.capacity }}</td>
+            <td>{{ apartment.address }}</td>
+            <td>
+                <a href="{% url 'edit_apartment' apartment.id %}">
+                    <i class="tiny material-icons blue-text text-darken-2 tooltipped table-actions" data-position="top" data-tooltip="I am a tooltip">create</i>
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock body_content %}
+{% block javascript %}
+<script>
+  $(document).ready(function(){
+    $('#apartments_table').DataTable();
+     $('div.dataTables_filter input').addClass('dt-search-input-materialize');
+  });
+</script>
+{% endblock %}
