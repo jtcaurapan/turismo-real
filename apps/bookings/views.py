@@ -43,7 +43,7 @@ def check_availability(request):
             message = "Not ajax"
             return HttpResponse(status=500)
     else:
-        message = "You must provide dates hola!!!"
+        message = "You must provide dates!"
         return HttpResponse(status=500)
 
 
